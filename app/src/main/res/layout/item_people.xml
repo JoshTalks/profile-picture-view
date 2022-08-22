@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="person"
+            type="com.joshtalks.ppviewsample.Person" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp">
+
+            <com.joshtalks.profilepictureview.ProfilePictureView
+                android:id="@+id/personDp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_icon"
+                app:dynamicImageUrl="@{person.profilePicture}"
+                app:dynamicUserName="@{person.name}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shape="circle" />
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="@{person.name}"
+                app:layout_constraintBottom_toTopOf="@+id/bio"
+                app:layout_constraintStart_toEndOf="@+id/personDp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="Rahul Sharma" />
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:text="@{person.message}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/personDp"
+                app:layout_constraintTop_toBottomOf="@+id/personName"
+                tools:text="Hi Sahil, How are you??" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="320dp"
+            android:layout_height="0.5dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:background="#575656" />
+
+    </LinearLayout>
+</layout>

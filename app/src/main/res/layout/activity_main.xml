@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="handler"
+            type="com.joshtalks.ppviewsample.MainActivity" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/joshLogo"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/josh_talks_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.joshtalks.profilepictureview.ProfilePictureView
+        android:id="@+id/profilePictureView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        app:nameLetters="one"
+        android:src="@drawable/person_icon"
+        app:imageUrl="https://live.staticflickr.com/7480/15920980069_087d525355_b.jpg"
+        app:userName="Sahil Khan"
+        app:layout_constraintBottom_toBottomOf="@+id/joshLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/joshLogo"
+        app:shape="rounded" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A6A6A6"
+        app:layout_constraintBottom_toTopOf="@+id/peopleList" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/peopleList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joshLogo"
+        tools:listitem="@layout/item_people" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
