@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Josh_Talk_Logo.png/480px-Josh_Talk_Logo.png" width="228">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Josh_Talk_Logo.png/480px-Josh_Talk_Logo.png" width="158">
 
 # Profile Picture View for Android
 
@@ -8,8 +8,9 @@ Use this Library to show Profile Picture using url or show initial letter of use
 
 ## Glimpse
 
-![](https://im3.ezgif.com/tmp/ezgif-3-0579bfe5f5.gif)
+<img src="https://im3.ezgif.com/tmp/ezgif-3-0579bfe5f5.gif" width="208">
 
+# Profile Picture View for Android
 
 ## Dependency
 
