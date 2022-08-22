@@ -1,6 +1,4 @@
-
-![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Josh_Talk_Logo.png/480px-Josh_Talk_Logo.png)
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Josh_Talk_Logo.png/480px-Josh_Talk_Logo.png" width="228">
 
 # Profile Picture View for Android
 
