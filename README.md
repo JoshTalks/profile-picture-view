@@ -57,3 +57,7 @@ Note: All these Attributes can be set or changed programmatically as well.
 
 ## 🔗 Follow Josh Talks
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/joshtalks/mycompany/)
+
+[![github](https://img.shields.io/github/followers/JoshTalks?style=social)](https://github.com/JoshTalks)
+
+[![youtube](https://img.shields.io/github/followers/JoshTalks?style=social)](https://github.com/JoshTalks)
