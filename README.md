@@ -8,7 +8,7 @@ Use this Library to show Profile Picture using url or show initial letter of use
 
 ## Glimpse
 
-<img src="https://im3.ezgif.com/tmp/ezgif-3-0579bfe5f5.gif" width="208">
+<img src="https://github.com/JoshTalks/profile-picture-view/blob/master/ppv_demo_one.gif" width="208">
 
 # Profile Picture View for Android
 
